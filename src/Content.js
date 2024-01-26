@@ -8,9 +8,17 @@ const Content = () => {
       return names[int];
     }
 
+    const handleClick = (e) => {
+        alert(e)
+    }
+    const handleClick2 = (name) => {
+        alert(`You clicked a button ${name}`)
+    }
+
     return (
         <main className="content">
             <p>Let's {handleNameChange()} Money</p>
+            <button onClick={() => handleClick2("Nidurshan")}> Click Here!! </button>
         </main>
     )
 }
